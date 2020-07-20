@@ -15,14 +15,14 @@ echo color("red","           SLALU ADA JALAN   \n");
 echo color("white","=====================================\n");
 echo color("green","         JANGAN LUPA BERDOA                       \n");
 echo color("nevy","     SING TENANG DAN SING SABAR               \n");
-echo color("green","           SING CAK-CEK                                   \n");
+echo color("green","            AL - Fatihah                                 \n");
 echo color("white","=====================================\n");
-echo color("yellow","======= WA GROUP @CAK-CEK =========\n");
+echo color("yellow","======= JHON'S COFFEE =========\n");
 echo color("white","=====================================\n");
 echo "| Version  : 2020                       |\n";
 echo "| Time     :".date('[d-m-Y] [H:i:s]')." |\n";
-echo "| Create By: @Youdie77. |\n";
-echo "| Li Cheng PENAKLUK JANDA MUDA\n";
+echo "| Create By: Mbahdoel03 |\n";
+echo "| \n"; BOJOMU SEMANGGATKU
 echo "\n";
 // function change(){
         $nama = nama();
@@ -68,7 +68,7 @@ echo "\n";
         echo color("nevy","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
         sleep(105);
-        echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬🛠AUTO REDEEM OM JO🛠▬▬▬▬▬▬▬▬▬▬▬▬");
+        echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬🛠AUTO REDEEM 🛠▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("nevy","🔒▶️ Claim Voucher 1: ");
         //echo "\n".color("yellow","⏳▶️ Please wait  ");
         for($a=0;$a<=5;$a++){
@@ -118,7 +118,7 @@ echo "\n";
           sleep(1);}
           
           
-        $data = '{"referral_code":"G-QQ4CZTZ"}';
+        $data = '{"referral_code":"G-GJJGHF6}';
         $claim = request("/customer_referrals/v1/campaign/enrolment", $token, $data);
         $message = fetch_value($claim,'"message":"','"');
        // echo "\n".$claim;
