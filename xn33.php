@@ -11,13 +11,13 @@ $headers[] = 'X-Location: -6,117412,106,153527';
 
 
 
-echo color("red","           SLALU ADA JALAN   \n");
+echo color("yellow","           SLALU ADA JALAN   \n");
 echo color("white","=====================================\n");
 echo color("green","         JANGAN LUPA BERDOA                       \n");
 echo color("nevy","     SING TENANG DAN SING SABAR               \n");
 echo color("green","            AL - Fatihah                                 \n");
 echo color("white","=====================================\n");
-echo color("yellow","======= JHON'S COFFEE =========\n");
+echo color("yellow","=======😘 JHON'S COFFEE 😘=========\n");
 echo color("white","=====================================\n");
 echo "| Version  : 2020                       |\n";
 echo "| Time     :".date('[d-m-Y] [H:i:s]')." |\n";
@@ -69,13 +69,13 @@ echo "\n";
         save("token.txt",$token);
         sleep(105);
         echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬🛠AUTO REDEEM 🛠▬▬▬▬▬▬▬▬▬▬▬▬");
-        echo "\n".color("nevy","🔒▶️ Claim Voucher 1: ");
+        echo "\n".color("green","🔒▶️ Claim Voucher 1: ");
         //echo "\n".color("yellow","⏳▶️ Please wait  ");
         for($a=0;$a<=5;$a++){
           echo color("yellow",$a);
           sleep(1);}
         
-        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0607"}');
+        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         //echo ("\n".$code1);
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
@@ -83,13 +83,13 @@ echo "\n";
         else{
           echo "\n".color("red","🔐▶️ Message: ".$message);}
 	     
-        echo "\n".color("nevy","🔒▶️ Claim Voucher 2: ");
+        echo "\n".color("green","🔒▶️ Claim Voucher 2: ");
         //echo "\n".color("yellow","⏳▶️ Please wait");
         for($a=0;$a<=5;$a++){
           echo color("yellow",$a);
           sleep(1);}
           
-        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0607"}');
+        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
           echo "\n".color("green","🔓▶️ Message: ".$message);}
@@ -97,13 +97,13 @@ echo "\n";
           echo "\n".color("red","🔐▶️ Message: ".$message);}
        
   
-        echo "\n".color("nevy","🔒▶️ Claim Voucher 3: ");
+        echo "\n".color("green","🔒▶️ Claim Voucher 3: ");
         //echo "\n".color("yellow","⏳▶️ Please wait");
         for($a=0;$a<=5;$a++){
           echo color("yellow",$a);
           sleep(1);}
           
-        $code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD0607"}');
+        $code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
        // echo "\n".$code1;
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
@@ -213,7 +213,7 @@ echo "\n";
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 112233 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+         echo color("green","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 112233 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
          $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
@@ -288,7 +288,7 @@ echo "\n".color("nevy","🔒▶️ Claim Voucher 1: ");
           sleep(1);}
 				
 			//	$data = '{"promo_code":"STAYGOFOOD201105A"}';
-		$data = '{"promo_code":"GOFOOD022620A"}';
+		$data = '{"promo_code":"AKUSERIUSMAIN"}';
         $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
         $message = fetch_value($claim,'"message":"','"');
         if(strpos($claim, 'Promo kamu sudah bisa dipakai')){
