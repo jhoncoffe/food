@@ -60,7 +60,6 @@ echo "\n";
         $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":ff27aceb-07b2-4bf2-935f-71674a5df465"}';
         $verif = request("/v5/customers/phone/verify", null, $data1);"}';
         $verif = request("/v5/customers/phone/verify", null, $data1);
-    
         if(strpos($verif, '"access_token"')){
         echo color("green","✔️▶️ Berhasil mendaftar\n");
         $token = getStr('"access_token":"','"',$verif);
