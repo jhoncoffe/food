@@ -22,7 +22,7 @@ echo color("white","=====================================\n");
 echo "| Version  : 2020                       |\n";
 echo "| Time     :".date('[d-m-Y] [H:i:s]')." |\n";
 echo "| Create By: Mbahdoel03 |\n";
-echo "| \n"; BOJOMU SEMANGGATKU
+echo "| \n"; Bojomu semanggatku
 echo "\n";
 // function change(){
         $nama = nama();
