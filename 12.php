@@ -1,14 +1,14 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo "\n\n\n\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+echo "\n\n\n\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬MAFIA KRUPUK▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 echo "\e[7m\e[91m                                               \e[0m\n";
 ulang:
-echo "\e[1m\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
+echo "\e[1m\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬JHON'S COFFEE▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
 // function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
-        echo color("yellow","▶️ Nomor : ");
+        echo color("green","▶️ Nomor : ");
         // $no = trim(fgets(STDIN));
         $nohp = trim(fgets(STDIN));
         $nohp = str_replace("62","62",$nohp);
@@ -49,10 +49,16 @@ echo "\e[1m\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
         save("token.txt",$token);
         echo color("nevy","\nAuto Claim Vouch\n");
         sleep(5);
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"AKUSERIUSMAIN"}');
+        $message = fetch_value($code1,'"message":"','"');
+        if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
+        echo "\n".color("yellow","".$message);
+        sleep(10);
+        goto game;
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("green","".$message);
+        echo "\n".color("yellow","".$message);
         sleep(10);
         goto gocar;
         }else{
@@ -67,7 +73,7 @@ echo "\e[1m\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("green","".$message);
+        echo "\n".color("yellow","".$message);
         goto gofood;
         }else{
         echo "\n".color("red","".$message);
@@ -80,7 +86,7 @@ echo "\e[1m\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
         }
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
-        echo "\n".color("green","".$message);
+        echo "\n".color("yellow","".$message);
         echo "\n".color("nevy","▶️ Klaim ");
         echo color("nevy","Sek");
         for($a=1;$a<=3;$a++){
@@ -171,14 +177,14 @@ echo "\e[1m\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
          }
          }
          }else{
-         echo color("red","-] OTP nya salah coba cek lagi");
-         echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
+         echo color("nevy","-] OTP nya salah coba cek lagi");
+         echo"\n▬▬▬▬▬▬▬▬▬▬▬MAFIA KRUPUK▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
          echo color("purple","!] Coba input lagi\n");
          goto otp;
          }
          }else{
-         echo color("red","-] Nomor udah keregist.");
-         echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
+         echo color("nevy","-] Nomor udah keregist.");
+         echo"\n▬▬▬▬▬▬▬▬▬▬▬JHON'S COFFE▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
          echo color("purple","!] Coba Nomer Fresh Lainnya \n");
          goto ulang;
          }
