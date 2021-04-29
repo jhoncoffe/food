@@ -75,7 +75,7 @@ echo "\n";
           echo color("yellow",$a);
           sleep(1);}
         
-        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
+        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"RAMADAN60"}');
         $message = fetch_value($code1,'"message":"','"');
         //echo ("\n".$code1);
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
@@ -89,7 +89,7 @@ echo "\n";
           echo color("yellow",$a);
           sleep(1);}
           
-        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
+        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"RAMADAN60"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
           echo "\n".color("green","🔓▶️ Message: ".$message);}
@@ -103,7 +103,7 @@ echo "\n";
           echo color("yellow",$a);
           sleep(1);}
           
-        $code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
+        $code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"BERKAH60"}');
         $message = fetch_value($code1,'"message":"','"');
        // echo "\n".$code1;
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
@@ -256,7 +256,7 @@ $login = curl('https://api.gojekapi.com/v3/customers/login_with_phone', '{"phone
 			$verif = curl('https://api.gojekapi.com/v3/customers/token', $data1, $headers);
 			$verifs = json_decode($verif[0]);
 			
-/*$code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2206"}');
+/*$code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"RAMADAN60"}');
         $message = fetch_value($code1,'"message":"','"');
         */
 			
@@ -287,8 +287,8 @@ echo "\n".color("nevy","🔒▶️ Claim Voucher 1: ");
           echo color("yellow",$a);
           sleep(1);}
 				
-			//	$data = '{"promo_code":"STAYGOFOOD201105A"}';
-		$data = '{"promo_code":"GOFOOD022620A"}';
+			//	$data = '{"promo_code":"RAMADAN60"}';
+		$data = '{"promo_code":"RAMADAN60"}';
         $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
         $message = fetch_value($claim,'"message":"','"');
         if(strpos($claim, 'Promo kamu sudah bisa dipakai')){
