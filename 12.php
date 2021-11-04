@@ -49,13 +49,13 @@ echo "\e[1m\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬JHON'S COFFEE▬▬�
         save("token.txt",$token);
         echo color("nevy","\nAuto Claim Vouch\n");
         sleep(5);
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"AKUSERIUSMAIN"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOJEKINAJA"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("yellow","".$message);
         sleep(10);
         goto game;
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOJEKPWON"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("yellow","".$message);
@@ -70,7 +70,7 @@ echo "\e[1m\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬JHON'S COFFEE▬▬�
         echo color("yellow",".");
         sleep(20);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOJEKKDS"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("yellow","".$message);
@@ -84,7 +84,7 @@ echo "\e[1m\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬JHON'S COFFEE▬▬�
         echo color("yellow",".");
         sleep(15);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOJEKINAJA"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("yellow","".$message);
         echo "\n".color("nevy","▶️ Klaim ");
@@ -94,7 +94,7 @@ echo "\e[1m\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬JHON'S COFFEE▬▬�
         sleep(1);
         }
         sleep(10);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOJEKPWON"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("green","".$messageboba09);
         sleep(3);
